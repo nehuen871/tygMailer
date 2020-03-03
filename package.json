@@ -23,7 +23,13 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "test"
+    "client": "cd client/ && npm start",
+    "build": "cd client/build && npm start",
+    "server-dev": "nodemon NODE_ENV=development ./bin/www",
+    "server-prod": "nodemon NODE_ENV=production ./bin/www",
+    "dev": "concurrently --kill-others-on-fail \"npm run server-dev\" \"npm run client\"",
+    "prod": "concurrently --kill-others-on-fail \"npm run server-prod\" \"npm run build\"",
+    "eject": "concurrently --kill-others-on-fail \"npm run server\" \"npm run eject\""
   },
   "repository": {
     "type": "git",
