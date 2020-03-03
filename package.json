@@ -1,0 +1,43 @@
+{
+  "name": "tygmailer",
+  "version": "1.0.0",
+  "description": "Plataforma para envio y cobro de mails",
+  "main": "index.js",
+  "dependencies": {
+    "googleapis": "^39.2.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "csurf": "^1.9.0",
+    "debug": "~2.6.9",
+    "ejs": "^2.7.4",
+    "express": "^4.16.4",
+    "express-flash": "^0.0.2",
+    "express-layout": "^0.1.0",
+    "express-session": "^1.15.6",
+    "express-validator": "^4.3.0",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "multer": "^1.3.0",
+    "mysql": "^2.15.0",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nehuen871/tygMailer.git"
+  },
+  "keywords": [
+    "mail",
+    "mastercard",
+    "visa"
+  ],
+  "author": "nenu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nehuen871/tygMailer/issues"
+  },
+  "homepage": "https://github.com/nehuen871/tygMailer#readme"
+}
