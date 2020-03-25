@@ -2,9 +2,7 @@
   "name": "tygmailer",
   "version": "1.0.0",
   "description": "Plataforma para envio y cobro de mails",
-  "main": "index.js",
   "dependencies": {
-    "googleapis": "^39.2.0",
     "body-parser": "^1.19.0",
     "cookie-parser": "~1.4.4",
     "csurf": "^1.9.0",
@@ -15,10 +13,12 @@
     "express-layout": "^0.1.0",
     "express-session": "^1.15.6",
     "express-validator": "^4.3.0",
+    "googleapis": "^39.2.0",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "multer": "^1.3.0",
     "mysql": "^2.15.0",
+    "nodemailer": "^6.4.6",
     "nodemon": "^2.0.2"
   },
   "devDependencies": {},
@@ -27,8 +27,8 @@
     "build": "cd client/build && npm start",
     "server-dev": "nodemon NODE_ENV=development ./bin/www",
     "server-prod": "nodemon NODE_ENV=production ./bin/www",
-    "dev": "concurrently --kill-others-on-fail \"npm run server-dev\" \"npm run client\"",
-    "prod": "concurrently --kill-others-on-fail \"npm run server-prod\" \"npm run build\"",
+    "dev": "npm run server-dev | npm run client",
+    "prod": "npm run server-prod | npm run build",
     "eject": "concurrently --kill-others-on-fail \"npm run server\" \"npm run eject\""
   },
   "repository": {
