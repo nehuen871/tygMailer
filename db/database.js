@@ -2,9 +2,9 @@ const mysql = require('mysql');
 
 const mysqlConnection = mysql.createConnection({
   host: 'localhost',
-  user: 'ingecoop',
-  password: 'ingecoop',
-  database: 'ingecoop',
+  user: 'tyg',
+  password: 'tyg',
+  database: 'tyg',
   multipleStatements: true
 });
 
@@ -18,3 +18,8 @@ mysqlConnection.connect(function (err) {
 });
 
 module.exports = mysqlConnection;
+
+
+//CREATE USER 'tyg'@'localhost' IDENTIFIED BY 'tyg';
+//GRANT ALL PRIVILEGES ON tyg.* TO 'tyg'@'localhost';
+//FLUSH PRIVILEGES;
